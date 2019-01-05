@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<style type="text/css">
+		*
+		{
+			padding: 0px;
+			margin: 0px;
+		}
+		a
+		{
+			text-decoration:none;
+			color:rgb(154,151,145);
+		}
+		#whole{
+			width: 1350px;
+			margin: 0 auto;
+		}
+		.box_out
+		{
+			margin:0 auto;
+			width: 1350px;
+			height: 160px;
+			border-bottom: rgb(254,108,0) solid 2px;
+		}
+		.box_head_line
+		{
+			width: 1350px;
+			height: 30px;
+			float: left;
+		}
+		.box_head_line_1
+		{
+			margin-left: 84px;
+			height: 30px;
+			width: 82px;
+			line-height: 30px;
+			float: left;
+			text-align: center;
+			color: rgb(154,151,145);
+			font-size: 5px;
+		}
+		.box_head_line_2
+		{
+			margin-left: 375px;
+			height: 30px;
+			width: 740px;
+			line-height: 30px;
+			align-items: center;
+			float: left;
+			font-size: 5px;
+			color: rgb(154,151,145);
+			padding-right: 18px;
+
+		}
+		.bar_logo
+		{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-top: 5px;
+			margin-right: 19px;
+		}
+		.box_second
+		{
+			width: 1350px;
+			height: 68px;
+			float: left;
+		}
+		.box_second_img
+		{
+			float: left;
+			width: 145px;
+			margin-left: 84px;
+
+		}
+		.box_second_search
+		{
+			width: 500px;
+			height: 36px;
+			margin-left: 105px;
+			margin-top: 17px;
+			border: rgb(254,108,0) solid 2px;
+			float: left;
+			font-size: 12px;
+			color: rgb(154,151,145);
+		}
+		.box_second_search_button
+		{
+			width: 85px;
+			height: 40px;
+			background-color: rgb(254,108,0);
+			color: rgb(255,255,255);
+			margin-top: 17px;
+			margin-right: 89px;
+			float: left;
+			border: 0px;
+			cursor:pointer;
+		}
+		.box_second_box
+		{
+			width: 85px;
+			height: 40px;
+			border: rgb(154,151,145) solid 1px;
+			color: rgb(154,151,145);
+			font-size: 11px;
+			margin-top: 17px;
+			float: left;
+			text-align: center;
+		}
+		.box_second_box_last
+		{
+			width: 85px;
+			height: 40px;
+			line-height: 40px;
+			border: rgb(154,151,145) solid 1px;
+			color: rgb(255,255,255);
+			font-size: 10px;
+			margin-top: 17px;
+			float: left;
+			text-align: center;
+		}
+		.box_second_box_img
+		{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-left: 30px;
+			margin-top: 5px;
+			margin-bottom: 3px;
+		}
+		..box_click_line
+		{
+			width: 1350px;
+			height: 19px;
+			float: left;
+		}
+		.box_click_first
+		{
+			width: 77px;
+			height: 17px;
+			margin-left: 243px;
+			border-right:rgb(154,151,145) solid 1px;
+			float: left;
+			font-size: 5px;
+			text-align: center;
+		}
+		.box_click
+		{
+			width: 77px;
+			height: 17px;
+			border-right:rgb(154,151,145) solid 1px;
+			float: left;
+			font-size: 5px;
+			text-align: center;
+		}
+		.box_click_last
+		{
+			width: 77px;
+			height: 17px;
+			float: left;
+			text-align: center;
+			font-size: 5px;
+		}
+		.box_but_line
+		{
+			width: 1350px;
+			height: 40px;
+			margin-top: 5px;
+			float: left;
+		}
+		.box_but_line_first
+		{
+			width: 170px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			margin-left: 84px;
+			background-color: rgb(254,108,0);
+			font-size: 15px;
+			color: rgb(255,255,255);
+			float: left;
+		}
+		.box_but_line_but
+		{
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			margin-left: 43px;
+			float: left;
+			font-size: 15px;
+		}
+
+
+
+		#list{
+			width: 1330px;
+			height: 40px;
+			margin: 0 auto;
+			list-style: none;
+			background-color: rgb(0,0,0);
+			padding-left:0px ;
+		}
+		#list li{
+			float: left;
+			text-align: center;	
+			width: 96px;
+			margin-left: 26px;
+			line-height: 40px;
+			background-color: rgb(0,0,0);
+		}
+		#list li:hover{
+			background-color: rgb(254,13,74);
+		}
+		#list a{
+			color: white;
+			text-decoration: none;
+		}
+		#mid{
+			height: 780px;
+			width: 1330px;
+			margin: 0 auto;
+			background-color: rgb(246,245,244);
+		}
+		#mid-messige{
+			float: left;
+			height: 36px;
+			width: 520px;
+			line-height: 36px;
+			margin-left: 85px;
+			font-size: 13px;
+		}
+		#mid-middle{
+			float: left;
+			height: 633px;
+			width: 998px;
+			background-color: rgb(255,255,255);
+			margin-left: 85px;
+		}
+		#slide{
+			opacity:0.4;
+			cursor: move;
+			display:none;
+			filter:alpha(opacity=40);	
+			position:absolute;					
+			width:150px;
+			height:150px;
+			left:0px;
+			top:0px;
+			background:#CCC;
+		}
+		#img2{
+			position:absolute;
+			overflow:hidden;
+			display:none;
+			left:612px;
+			top:264px;
+			width:410px;
+			height:410px;
+			border: 1px solid rgb(208,205,199);
+		}
+		#Bimg{
+			position:absolute;
+			left:0;
+			top:0;
+		}
+		#mid-middle-img{
+			position: relative;
+			height: 410px;
+			width: 410px;
+			border: 1px solid rgb(208,205,199);
+			margin-left: 18px;
+			margin-top: 18px;
+			
+		}
+		#mid-middle-right{
+			
+			margin-left: 450px;
+			margin-top: -410px;
+		}
+		#mid-img-right{
+			float: left;
+			margin-left: 6px;
+		}
+		#mid-img-bottom{
+			float: left;
+			margin-left: 85px;
+		}
+		#z-left{
+			cursor: pointer;
+			text-align: center;
+			float: left;
+			height:28px;
+			width: 62px;
+			line-height: 29px;
+		}
+		#z-right{
+			float: left;
+			cursor: pointer;
+			text-align: center;
+			height:28px;
+			width: 62px;
+			line-height: 29px;
+		}
+
+		.z-style2{
+			border: 1px solid rgb(254,10,82);
+			background: url(./img/duigou.png);
+			background-repeat: no-repeat;
+			background-position: 50px 16px;
+		}
+		#numbers-reduce{
+			float: left;
+			cursor: pointer;
+			text-align: center;
+			height: 28px;
+			width: 25px;
+			border: 1px solid rgb(206,203,197);
+			line-height: 28px;
+		}
+		#numbers-add{
+			height: 28px;
+			width: 25px;
+			border: 1px solid rgb(206,203,197);
+			text-align: center;
+			line-height: 28px;
+			float: left;
+			cursor: pointer;
+		}
+		#numbers-input{
+			float: left;
+			text-align: center;
+			height: 26px;
+			width: 50px;
+			border: 1px solid rgb(206,203,197);			
+			line-height: 28px;
+		}
+		#numbers-choises{
+			height: 30px;
+			font-size: 18px;
+			margin-left: 15px;
+			line-height: 30px;
+			color: rgb(254,108,0);
+		}
+		#buy{
+			text-align: center;
+			float: left;
+			height: 40px;
+			width: 150px;
+			border: 1px solid rgb(254,10,82);
+			line-height: 40px;
+			color: rgb(254,10,82);
+			font-size: 18px;
+			margin-left: 45px;
+			border-radius: 4px;
+		}
+		#shopping-drive{
+			height: 40px;
+			width: 150px;
+			line-height: 40px;
+			background-color: rgb(254,10,82);
+			color: rgb(255,255,255);
+			font-size: 18px;
+			text-align: center;
+			float: left;
+			margin-left: 22px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		#img-choises{
+			height: 60px;
+			width: 410px;
+			margin-left: 18px;
+		}
+		#img-choises-ul{
+			padding-left: 0px;
+			list-style: none;
+		}
+		.img-choises-style{
+			height: 58px;
+			width:58px;
+			float: left;
+			cursor: pointer;
+		}
+		.img-choises-style1{
+			border: 2px solid rgb(254,108,0);
+			height: 58px;
+			width:58px;
+			float: left;
+			cursor: pointer;
+		}
+		#bottom{
+			float:left ;
+			width: 1180px;
+			margin-top:-2px ;
+			margin-left: 85px;
+		}
+		#bottom-list{
+			height: 152px;
+			width: 1028px;
+			float: left;
+			margin-top: 30px;
+			border-bottom:1px solid rgb(154,151,145) ;
+		}
+		#bottom-list-ul{
+			list-style: none;
+			float: left;
+			padding-left: 0px;
+		}
+		#bottom-list-ul li{
+			margin-top: 5px;
+		}
+		#bottom-list-ul a{
+			color: rgb(154,151,145);
+			font-size: 13px;
+			text-decoration: none;
+		}
+		#bottom-list-ul a:hover{
+			color: rgb(254,108,0);
+		}
+		#concern{
+			float: left;
+			list-style: none;
+			height: 18px;
+			margin-left: 112px;
+			padding-left: 0px;
+		}
+		#concern li{
+			text-align: center;
+			float: left;
+			font-size: 13px;
+			line-height: 20px;
+			border-right: 1px solid rgb(154,151,145);
+		}
+		#concern a{
+			color: black;
+			text-decoration: none;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		#concern a:hover{
+			color: rgb(254,108,0);
+		}
+		#font{
+			float: left;
+			margin-left: 350px;
+			color: rgb(154,151,145);
+			font-size: 11px;
+		}
+		#license{
+			float: left;
+			margin-left: 55px;
+			color: rgb(154,151,145);
+			font-size: 12px;
+			width: 1070px;
+			text-align: center;
+		}
+		#picture{
+			float: left;
+			margin-left: 285px;
+			margin-top: 10px;
+		}
+		#alert{
+			display: none;
+		}
+		#back{
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgb(222,220,215);
+			opacity: 0.6;
+			position: fixed;
+		}
+		#drive{
+			height: 220px;
+			width: 400px;
+			border: 2px solid rgb(172,169,211);
+			position: fixed;
+			opacity: 1;
+			left: 35%;
+			top: 35%;
+			background-color: rgb(255,255,255) ;
+		}
+		#drive-top{
+			margin-left:375px;
+			margin-top:15px;
+			cursor: pointer;
+		}
+
+		#drive-bottom-left{
+			width:150px;
+			height:40px;
+			border:1px solid rgb(255,7,84);
+			float:left;
+			border-radius:5px;
+			margin-left:28px;
+			line-height: 40px;
+			text-align: center;
+			color:rgb(255,7,84);
+			cursor:pointer;
+		}
+		#drive-bottom-right{
+			width:150px;
+			height:40px;
+			border-radius:5px;
+			float:left;
+			margin-left:28px;
+			line-height: 40px;
+			text-align: center;
+			color:white;
+			background-color:rgb(255,7,84);
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="box_out" id="top">
+		<div class="box_head_line">
+			<div class="box_head_line_1">帮5买，享帮帮</div>
+			<div class="box_head_line_2">
+				<div class="bar_logo" style="background:url(./img/common_min.png) 0 -31px no-repeat;" ><a href="#">&nbsp;</a></div>
+				<div class="bar_logo" style="background:url(./img/common_min.png) 0 -53px no-repeat;" ><a href="#">&nbsp;</a></div>
+				<div class="bar_logo" style="background:url(./img/common_min.png) 0 -75px no-repeat;" ><a href="#">&nbsp;</a></div>
+				<a  href="#" style="margin-right: 19px;">登陆</a>
+				<a  href="#" style="margin-right: 19px;">注册</a>
+				<a  href="#" style="margin-right: 19px;background:url(./img/common_min.png) -4px -115px no-repeat;padding-left: 17px;">消息</a>
+				<a  href="#" style="margin-right: 19px;background:url(./img/dingdan.jpg)  no-repeat;padding-left: 17px;">我的订单</a>
+				<a  href="#" style="margin-right: 19px;">我的收藏</a>
+				<a  href="#" style="margin-right: 19px;">帮砖兑换</a>
+				<a  href="#" style="margin-right: 19px;background:url(./img/phone.png)  no-repeat;padding-left: 17px;">手机版</a>
+				<a  href="#" style="margin-right: 19px;">帮5淘</a>
+				<a  href="#" style="margin-right: 19px;">客户服务</a>
+				<a  href="#" style="margin-right: 19px;background:url(./img/gouwuche.jpg)  no-repeat;padding-left: 17px;">购物车<span style="color: rgb(254,108,0);"><strong>0</strong></span></a>
+			</div>
+		</div>
+		<div class="box_second">
+			<div class="box_second_img"><img src="./img/logo_03.jpg"></div>
+			<input type="text" name="KeyWord" class="box_second_search" value="输入商品网址或关键词，直通全网，快速帮5购">
+			<input type="button" name="Search" class="box_second_search_button" value="搜全网">
+			<div class="box_second_box">
+				<div class="box_second_box_img" style="background:url(./img/common_min.png) -4px -115px no-repeat;padding-left: 17px;"></div>
+				<br>
+				400-085-0505
+			</div>
+			<div class="box_second_box">
+				<div class="box_second_box_img" style="background:url(./img/common_min.png) -4px -115px no-repeat;padding-left: 17px;"></div>
+				<br>
+				mc@b6m.com
+			</div>
+			<div class="box_second_box_last" style="background-color: rgb(254,108,0)">常见问题</div>
+		</div>
+		<div class="box_click_line">
+			<div class="box_click_first" style="color: red">洗发护发</div>
+			<div class="box_click" style="color: red">日本纸尿裤</div>
+			<div class="box_click">身体乳</div>
+			<div class="box_click">文胸内衣</div>
+			<div class="box_click" style="color:rgb(154,151,145)">iPhone 6s</div>
+			<div class="box_click" style="color:rgb(154,151,145)">iPad Air2</div>
+			<div class="box_click">牛仔裤</div>
+			<div class="box_click">奶粉</div>
+			<div class="box_click">防晒霜</div>
+			<div class="box_click_last">伞</div>
+		</div>
+		<div class="box_but_line">
+			<div class="box_but_line_first">全部商品分类</div>
+			<div class="box_but_line_but">帮5赚</div>
+			<div class="box_but_line_but">帮韩品</div>		
+			<div class="box_but_line_but">超划算</div>		
+			<div class="box_but_line_but">品牌货栈</div>
+			<div class="box_but_line_but">韩国馆</div>
+			<div class="box_but_line_but">帮社区</div>	
+			<div class="box_but_line_but">1元兑奖<img src="./img/hot.gif"></div>									
+		</div>
+	</div>
+		
+		<ul id="list">
+			<li style="margin-left:75px;"><a href="index.html">首页</a></li>
+			<li><a href="">热门品牌</a></li>
+			<li><a href="">美妆个户</a></li>
+			<li><a href="">服饰鞋包</a></li>
+			<li><a href="">母婴生活</a></li>
+			<li><a href="">食品保健</a></li>
+			<li><a href="">韩国直邮</a></li>
+			<li><a href="">跨境购</a></li>
+			<li style="width:163px;height:40px;margin-left:50px;"><img src="./img/ff_03.jpg" alt=""></li>
+		</ul>
+
+
+	<div id="whole">
+		<div id="mid">
+			<div id="mid-messige">
+				主页>美容护肤/美体/精油>防晒>韩国&nbspRE:CIPE&nbsp水晶清爽防水防晒喷雾SPF50&nbsp150ml/瓶
+			</div>
+			<div id="mid-middle">
+				<div id="mid-middle-img">
+					<img src="./img/pp0.jpeg" id="mid-img" alt="">
+					<div id="slide"></div>
+				</div>
+				<div id="img2">
+        			<img src="./img/pp0.jpeg"  id="Bimg">
+    			</div>
+				<div id="mid-middle-right">
+					<div style="height:23px;line-height:23px;">韩国&nbspRE:CIPE&nbsp水晶清爽防水防晒喷雾SPF50&nbsp150ml/瓶</div>
+					<div style="height:45px;width:470px;line-height:23px;color:rgb(154,151,145);font-size:12px;">【限购3件】&nbsp超透明无痕防晒，防水防汗定妆，保温降温不粘腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白更不会像防晒霜那样抹不开，非常实用，开始存货吧。</div>
+					<div style="height:23px;line-height:23px;margin-top:30px;margin-left:15px;"><span style="font-size:12px;">价格</span><span style="margin-left:50px;color: rgb(255,145,96);font-size:16px;">¥71</span><span style="margin-left:18px;font-size:13px;text-decoration: line-through;">¥150</span></div>
+					<div><img src="./img/ss_09.jpg" alt=""></div>
+					<div style="width:475px;height:29px;">
+						<span style="margin-left:20px;font-size:15px;margin-right: 22px;float: left;line-height: 28px;">化妆品净含量</span>
+						<div id="z-left" class="z-style2">150ml</div>
+						<div id="z-right" class="z-style1">200ml</div>
+					</div>
+					<div style="width:475px;height:29px;margin-top:20px;">
+						<span style="margin-left:20px;font-size:15px;margin-right: 60px;float: left;line-height: 28px;">数量</span>
+						<div id="numbers-reduce">-</div>
+						<input type="text" value="1" id="numbers-input">
+						<div id="numbers-add">+</div>
+						<span style="margin-left:25px;line-height: 28px;">件(库存5件)</span>
+					</div>
+					<div style="margin-top:17px;"><img src="img/oo_03.jpg" alt=""></div>
+					<div style="margin-left:107px;height:30px;line-height: 30px;">您已选择<span id="numbers-choises">"150ml"</span></div>
+					<div id="buy">立即预定</div>
+					<div id="shopping-drive">加入购物车</div>
+					<div id="alert">
+						<div id="back">
+							
+						</div>
+						<div id="drive">
+							<div id="drive-top">X</div>
+							<div id="drive-middle"><img src="./img/rr11_02.jpg" alt=""></div>
+							<div id="drive-bottom-left">继续购物</div>
+							<div id="drive-bottom-right">去购物车结算</div>
+						</div>
+					</div>
+				</div>
+				<div id="img-choises">
+					<span id="move-left" style="float: left;cursor: pointer;"><img src="./img/spanl.jpg" alt=""></span>
+					<div id="img-choises-left" class="img-choises-style1"><img src="./img/sp0.jpeg" alt=""></div>
+					<div id="img-choises-right" class="img-choises-style"><img src="./img/sp1.jpeg" alt=""></div>
+					<span id="move-right" style="margin-left:225px;float: left;cursor: pointer;"><img src="./img/spanr.jpg" alt=""></span>
+				</div>
+			</div>
+			<div id="main-img-right"><img src="./img/ww_07.jpg" alt=""></div>
+			<div id="main-img-bottom"><img src="./img/a_07.jpg" alt=""></div>
+		</div>
+		<div id="bottom">
+				<div style="margin-top:2px;float: left;">
+					<img src="./img/loginB.jpg" alt="">
+				</div>
+				<div id="bottom-list">
+					<ul id="bottom-list-ul" style="margin-left:80px;margin-top:0px;">
+						<li style="color:black;font-size:18px;">购物指南</li>
+						<li><a href="">如何下单</a></li>
+						<li><a href="">帮5购指南</a></li>
+						<li><a href="">订单查询</a></li>
+						<li><a href="">查看物流</a></li>
+					</ul>
+					<ul id="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+						<li style="color:black;font-size:18px;">支付相关</li>
+						<li><a href="">支付方式</a></li>
+						<li><a href="">安全设置</a></li>
+						<li><a href="">账户信息</a></li>
+					</ul>
+					<ul id="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+						<li style="color:black;font-size:18px;">售后服务</li>
+						<li><a href="">取消订单</a></li>
+						<li><a href="">申请售后</a></li>
+						<li><a href="">退货流程</a></li>
+						<li><a href="">退款相关</a></li>
+					</ul>
+					<ul id="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+						<li style="color:black;font-size:18px;">VIP服务</li>
+						<li><a href="">VIP优惠</a></li>
+						<li><a href="">如何成为VIP</a></li>
+						<li><a href="">超级帮钻</a></li>
+					</ul>
+					<ul id="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+						<li style="color:black;font-size:18px;">帮韩品</li>
+						<li><a href="">韩国正品</a></li>
+						<li><a href="">闪电发货</a></li>
+						<li><a href="">帮韩品售后</a></li>
+					</ul>
+					<ul id="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+						<li style="color:black;font-size:18px;">更多</li>
+						<li><a href="">手机APP</a></li>
+						<li><a href="">帮5采APP</a></li>
+						<li><a href="">帮5陶插件</a></li>
+						<li><a href="">其他</a></li>
+					</ul>
+					<div style="margin-left:65px;float: left;">
+						<img src="./img/erweima.jpg" alt="">
+					</div>
+				</div>
+				<ul id="concern">
+					<li><a href="">关于帮5买</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">合作商家</a></li>
+					<li><a href="">友情链接</a></li>
+					<li><a href="">加入我们</a></li>
+					<li><a href="">移动应用</a></li>
+					<li><a href="">热门</a></li>
+					<li><a href="">广告联盟</a></li>
+					<li style="border-right: 0px;"><a href="">使用条款</a></li>
+				</ul>
+				<div id="font"><p>Copyright &nbsp© &nbsp2011-2015 &nbspB5M.COM.All &nbsp rights &nbsp reserved.Powered &nbsp by &nbsp B5Msoft &nbsp Co.Ltd</p></div>
+				<div id="license">增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证(沪)-非经营性-2013-0034沪卫(中医)【2015】号沪ICP备11034776号-3|食品流通许可证：SP3101151410301755</div>
+				<div id="picture">
+					<img src="./img/bo1.gif" alt="" style="float: left;">
+					<img src="./img/bo2.png" alt="" style="float: left;">
+					<img src="./img/bo3.gif" alt="" style="float: left;">
+					<img src="./img/bo4.png" alt="" style="float: left;">
+					<img src="./img/bo5.png" alt="" style="float: left;">
+					<img src="./img/bo6.png" alt="" style="float: left;">
+					<img src="./img/bo7.png" alt="" style="float: left;">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+				function getStyle(obj, attr){
+					if(obj.currentStyle){
+						return obj.currentStyle[attr];
+					} else {
+						return getComputedStyle(obj, null)[attr];
+					}
+				}
+				var imgLeft=document.getElementById('img-choises-left');
+				var imgRight=document.getElementById('img-choises-right');
+				var moveLeft=document.getElementById('move-left');
+				var moveRight=document.getElementById('move-right');
+				var img=document.getElementById('mid-img');
+				var img1 = document.getElementById("mid-middle-img");
+				var img2 = document.getElementById("img2");
+				var slide = document.getElementById("slide");
+				var box = document.getElementById('mid-middle-img'); 
+				var choiseLeft=document.getElementById('z-left');
+				var choiseRight=document.getElementById('z-right');
+				var numbersChoice=document.getElementById('numbers-choises');
+				var reduce=document.getElementById('numbers-reduce');
+				var add=document.getElementById('numbers-add');
+				var input=document.getElementById('numbers-input');
+				var driveX=document.getElementById('drive-top');
+				var drive=document.getElementById('drive-bottom-left');
+				var alert=document.getElementById('alert');
+				var driveI=document.getElementById('shopping-drive');
+				imgRight.onmouseover=function(){
+					imgRight.className="img-choises-style1";
+					imgLeft.className="img-choises-style";
+					img.src="./img/pp1.jpeg";
+				}
+				imgLeft.onmouseover=function(){
+					imgLeft.className="img-choises-style1";
+					imgRight.className="img-choises-style";
+					img.src="./img/pp0.jpeg";
+				}
+				moveLeft.onclick=function(){
+					imgLeft.className="img-choises-style1";
+					imgRight.className="img-choises-style";
+					img.src="./img/pp0.jpeg";
+				}
+				moveRight.onclick=function(){
+					imgRight.className="img-choises-style1";
+					imgLeft.className="img-choises-style";
+					img.src="./img/pp1.jpeg";
+				}
+
+				img1.onmouseover=function(){
+				    slide.style.display='block';
+					img2.style.display='block';
+			 	}
+				img1.onmouseout=function(){
+				    slide.style.display='none';
+					img2.style.display='none';
+			 	}
+			    img1.onmousemove=function(ev){
+					var ev=ev||event;
+					var oL=ev.clientX-box.offsetLeft-slide.offsetWidth/2;
+					var oT=ev.clientY-box.offsetTop-slide.offsetHeight/2;
+					var oMaxw=img1.offsetWidth-slide.offsetWidth;
+					var oMaxh=img1.offsetHeight-slide.offsetHeight;
+					oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+					oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+					slide.style.left = oL+'px';
+					slide.style.top = oT+'px' ;
+					var Bimg = document.getElementById("Bimg");
+					Bimg.src=img.src;
+					Bimg.style.width=820+"px";
+					Bimg.style.height=820+"px";
+					var oBmaxw = img2.offsetWidth - Bimg.offsetWidth; 
+					var oBmaxh = img2.offsetHeight - Bimg.offsetHeight; 
+					Bimg.style.left = ( oL/oMaxw ) * oBmaxw + 'px';
+					Bimg.style.top = ( oT/oMaxh ) * oBmaxh + 'px';
+				}
+				choiseLeft.onclick=function(){
+					choiseLeft.className="z-style2";
+					choiseRight.className="z-style1";
+					numbersChoice.innerHTML="150ml";
+				}
+				choiseRight.onclick=function(){
+					choiseLeft.className="z-style1";
+					choiseRight.className="z-style2";
+					numbersChoice.innerHTML='"200ml"';
+				}
+				var numbers=parseInt(input.value);
+				input.onchange=function(){
+					numbers=parseInt(input.value);
+					if(numbers>5){
+						input.value=5;
+						input.innerHTML="5";
+						console.log(input);
+					}
+				}
+				reduce.onclick=function(){
+					add.style.cursor="pointer";
+					if(numbers<1){
+						reduce.style.cursor="not-allowed";
+					}else{
+						numbers--;
+						input.value=numbers;
+						input.innerHTML=numbers;
+					}
+				}
+				add.onclick=function(){
+					reduce.style.cursor="pointer";
+					if(numbers>=5){
+						add.style.cursor="not-allowed";
+					}else{
+						numbers++;
+						input.value=numbers;
+						input.innerHTML=numbers;
+						add.style.cursor="pointer";
+					}
+				}
+				driveX.onclick=function(){
+					alert.style.display="none";
+				}
+				drive.onclick=function(){
+					alert.style.display="none";
+				}
+				driveI.onclick=function(){
+					alert.style.display="block";
+				}
+		</script>
+</body>
+</html>

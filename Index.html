@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*
+		{
+			padding: 0px;
+			margin: 0px;
+		}
+		a
+		{
+			text-decoration:none;
+			color:rgb(154,151,145);
+		}
+		ul,li{
+			list-style: none;
+		}
+		.box_out_box{
+			margin:0 auto;
+			width: 1350px;
+			height: 160px;
+		}
+		.box_out
+		{
+			width: 1350px;
+			height: 160px;
+			border-bottom: rgb(254,108,0) solid 2px;
+			background-color: rgb(255,255,255);
+			float: left;
+			z-index: 12;
+		}
+		.box_head_line
+		{
+			width: 1350px;
+			height: 30px;
+			float: left;
+		}
+		.box_head_line_1
+		{
+			margin-left: 84px;
+			height: 30px;
+			width: 82px;
+			line-height: 30px;
+			float: left;
+			text-align: center;
+			color: rgb(154,151,145);
+			font-size: 5px;
+		}
+		.box_head_line_2
+		{
+			margin-left: 375px;
+			height: 30px;
+			width: 740px;
+			line-height: 30px;
+			align-items: center;
+			float: left;
+			font-size: 5px;
+			color: rgb(154,151,145);
+			padding-right: 18px;
+
+		}
+		.bar_logo
+		{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-top: 5px;
+			margin-right: 19px;
+		}
+		.box_second
+		{
+			width: 1350px;
+			height: 68px;
+			float: left;
+		}
+		.box_second_img
+		{
+			float: left;
+			width: 145px;
+			margin-left: 84px;
+
+		}
+		.box_second_search
+		{
+			width: 500px;
+			height: 36px;
+			margin-left: 105px;
+			margin-top: 17px;
+			border: rgb(254,108,0) solid 2px;
+			float: left;
+			font-size: 12px;
+			color: rgb(154,151,145);
+		}
+		.box_second_search_button
+		{
+			width: 85px;
+			height: 40px;
+			background-color: rgb(254,108,0);
+			color: rgb(255,255,255);
+			margin-top: 17px;
+			margin-right: 89px;
+			float: left;
+			border: 0px;
+			cursor:pointer;
+		}
+		.box_second_box
+		{
+			width: 85px;
+			height: 40px;
+			border: rgb(154,151,145) solid 1px;
+			color: rgb(154,151,145);
+			font-size: 11px;
+			margin-top: 17px;
+			float: left;
+			text-align: center;
+		}
+		.box_second_box_last
+		{
+			width: 85px;
+			height: 40px;
+			line-height: 40px;
+			border: rgb(154,151,145) solid 1px;
+			color: rgb(255,255,255);
+			font-size: 10px;
+			margin-top: 17px;
+			float: left;
+			text-align: center;
+		}
+		.box_second_box_img
+		{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-left: 30px;
+			margin-top: 5px;
+			margin-bottom: 3px;
+		}
+		..box_click_line
+		{
+			width: 1350px;
+			height: 19px;
+			float: left;
+		}
+		.box_click_first
+		{
+			width: 77px;
+			height: 17px;
+			margin-left: 243px;
+			border-right:rgb(154,151,145) solid 1px;
+			float: left;
+			font-size: 5px;
+			text-align: center;
+		}
+		.box_click
+		{
+			width: 77px;
+			height: 17px;
+			border-right:rgb(154,151,145) solid 1px;
+			float: left;
+			font-size: 5px;
+			text-align: center;
+		}
+		.box_click_last
+		{
+			width: 77px;
+			height: 17px;
+			float: left;
+			text-align: center;
+			font-size: 5px;
+		}
+		.box_but_line
+		{
+			width: 1350px;
+			height: 40px;
+			margin-top: 5px;
+			float: left;
+		}
+		.box_but_line_first
+		{
+			width: 170px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			margin-left: 84px;
+			background-color: rgb(254,108,0);
+			font-size: 15px;
+			color: rgb(255,255,255);
+			float: left;
+		}
+		.box_but_line_but
+		{
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			margin-left: 43px;
+			float: left;
+			font-size: 15px;
+		}
+
+		.body
+		{
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.body_box1
+		{
+			height: 550px;
+			width: 170px;
+			float: left;
+		}
+		.body_box1_1
+		{
+			height: 425px;
+			width: 25px;
+			background-color: rgb(76,76,74);
+			float: left;
+			font-size: 15px;
+			color: rgb(254,108,0);
+			text-align: center;
+
+		}
+
+		.body_box1_2
+		{
+			height: 425px;
+			width: 145px;
+			float: left;
+
+		}
+		.body_box1_2 span{
+			height: 30px;
+			float: left;
+			margin-top: 3px;
+			margin-left: 10px;
+			font-size: 13px;
+		}
+		.body_box1_3
+		{
+			width: 170px;
+			height: 42px;
+			float: left;
+			font-size: 12px;
+			color: rgb(133,93,56);
+			line-height: 42px;
+		}
+		.body_box1_3 img
+		{
+			float: left;
+			margin-left: 8px;
+			margin-top: 9px;
+			margin-right: 8px;
+		}
+
+ 		.body_box2
+		{
+			width: 800px;
+			height: 550px;
+			float: left;
+		}
+
+
+
+		.body_box2_img
+		{
+			width: 800px;
+			height: 360px;
+			float: left;
+			overflow: hidden;
+			position:relative;
+			left: 0px;
+			top: 0px;
+		}
+		.body_box2_img span{
+			height: 60px;
+			width: 60px; 
+			position: absolute;
+			cursor: pointer;
+		}
+		#sleft{
+			top:180px;
+			left:10px;
+			background: url(img/btn.gif) 0px 0px no-repeat;
+		}
+		#sright{
+			top:180px;
+			right:10px;
+			background: url(img/btn.gif) 0 -60px no-repeat;
+		}
+		.slider{
+			width: 6400px;
+			position: absolute;
+			left: -800px;
+		}
+		.slide{
+			width: 800px;
+			height: 360px;
+			float: left;
+		}
+		.nav{
+			position: absolute;
+			left: 200px;
+			bottom: 20px;
+		}			
+		.nav>li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			background: #ccc;
+			cursor: pointer;
+			margin: 0 10px;
+			border-radius: 50%;
+		}
+		.nav .active{
+			background: red;
+		}
+
+
+		.body_box2_box
+		{
+			height: 191px;
+			width: 200px;
+			float: left;
+		}
+		.body_box_right
+		{
+			height: 551px;
+			width: 210px;
+			float: left;
+		
+		}
+		.body_button{
+			float: left;
+			width: 1180px;
+			margin: 0 auto;
+		}
+		.bottom-list{
+			height: 152px;
+			width: 1028px;
+			float: left;
+			margin-top: 30px;
+			border-bottom:1px solid rgb(154,151,145) ;
+		}
+		.bottom-list-ul{
+			list-style: none;
+			float: left;
+			padding-left: 0px;
+		}
+		.bottom-list-ul li{
+			margin-top: 5px;
+		}
+		.bottom-list-ul a{
+
+			color: rgb(154,151,145);
+			font-size: 13px;
+			text-decoration: none;
+		}
+		.bottom-list-ul a:hover{
+			color: rgb(254,108,0);
+		}
+		.about{
+			height: 18px;
+			margin-left: 112px;
+			float: left;
+			list-style: none;
+			padding-left: 0px;
+		}
+		.about li{
+			text-align: center;
+			float: left;
+			font-size: 13px;
+			line-height: 20px;
+			border-right: 1px solid rgb(154,151,145);
+		}
+		.about a{
+			color: black;
+			text-decoration: none;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		.about a:hover{
+			color: rgb(254,108,0);
+		}
+		.copy{
+			float: left;
+			margin-left: 350px;
+			color: rgb(154,151,145);
+			font-size: 11px;
+		}
+		.license{
+			float: left;
+			margin-left: 55px;
+			color: rgb(154,151,145);
+			font-size: 12px;
+			width: 1070px;
+			text-align: center;
+		}
+		.license-picture{
+			float: left;
+			margin-left: 285px;
+			margin-top: 10px;
+		}
+
+		#animate-up{
+			height: 366px;
+			width: 208px;
+			background-color: white;
+			/* position: relative;
+			margin-left: 973px;
+			margin-top: -360px; */
+			float: left;
+		}
+		#news{
+			height: 43px;
+			width: 207px;
+			color: rgb(254,108,0);
+		}
+		#news-move{
+			height: 319px;
+			width: 203px;
+			border-top: 1px solid rgb(154,151,145);
+			border-bottom: 1px solid rgb(154,151,145);
+			overflow: hidden;
+		}
+		.news-ul{
+			list-style: none;
+			padding-left: 15px;
+			position: relative;
+			float: left;
+			top: 0px;
+		}
+		.news-ul li{
+			height: 28px;
+			line-height: 25px;
+			font-size: 13px;
+			color: rgb(254,108,0);
+		}
+		#phonefee{
+			height: 182px;
+			width: 209px;
+			float: left;
+			background-color: white;
+		}
+		#phonefee-top{
+			height: 32px;
+			width: 190px;	
+			margin-left: 15px;
+			line-height: 32px;
+			font-size: 13px;
+		}
+		#phonefee-input{
+			height: 22px;
+			width: 123px;
+			color: rgb(154,151,145);
+			margin-left: 15px;
+		}
+		#phonefee-select{
+			height: 17px;
+			width: 60px;
+			margin-left: 15px;
+			margin-top: 7px;
+		}
+		#phonefee-num{
+			
+			margin-left: 5px;
+			color: rgb(254,108,0);
+			margin-top: 7px;
+		}
+		#phonefee-pay{
+			height: 25px;
+			width: 175px;
+			background-color: rgb(254,108,0);
+			text-align: center;
+			line-height: 25px;
+			margin-top: 7px;
+			color: white;
+			cursor: pointer;
+			margin-left: 15px;
+			border-radius: 4px;
+		}
+
+
+
+		#right{
+			height: 560px;
+			width: 120px;
+			position: fixed;
+			margin-left: 1230px;
+			list-style: none;
+			padding-left: 0px;
+			overflow: hidden;
+		}
+		#right-first{
+			width: 120px;
+			cursor: pointer;
+			position: relative;
+			padding-top: 1px;
+			left: 77px;
+		}
+		#right-first-top{
+			width:120px;
+			height:60px;
+			background: url(img/consult-s.png) no-repeat ;
+			background-position: -1px 1px;
+		}
+		#right-first-bottom{
+			width:120px;
+			height:45px;
+			background:url(img/xiaobang.png) no-repeat;
+			background-position: 0px 0px;
+		}
+		#right-second{
+			height: 140px;
+			width: 120px;
+			margin-top: 4px;
+			cursor: pointer;
+			position: relative;
+			left: 77px;
+		}
+		#right-second-left{
+			height: 140px;
+			width: 60px;
+			background: url(img/youhui.png) no-repeat;
+			background-position: 0px 0px;
+			float: left;
+		}
+		#setup{
+			height: 140px;
+			width: 60px;
+			background-color: red;
+			float: left;
+			background-color: rgb(255,156,97);
+		}
+		#right-third{
+			height: 140px;
+			width: 120px;
+			margin-top: 4px;
+			cursor: pointer;
+			position: relative;
+			left: 77px;
+		}
+		#right-third-top{
+			height: 50px;
+			width: 120px;
+			background: url(img/app.png) no-repeat;
+			background-position: 0px 1px;
+			float: left;
+		}
+		#right-third-bottom{
+			height: 90px;
+			width: 30px;
+			margin-left: 0px;
+			background: url(img/serwei.png) no-repeat;
+			background-color: rgb(255,156,97);
+			background-position: 10px 43px;
+			float: left;
+		}
+		#right-third-middle{
+			height: 90px;
+			width: 90px;
+			float: left;
+		}
+		#right-fourth{
+			height: 140px;
+			width: 120px;
+			margin-top: 4px;
+			background: url(img/cart.png) no-repeat;
+			background-position: 0px 0px ;
+			cursor: pointer;
+			position: relative;
+			left: 77px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="box_out_box" id="box_out_box">
+		<div class="box_out" id="box_out">
+			<div class="box_head_line">
+				<div class="box_head_line_1">帮5买，享帮帮</div>
+				<div class="box_head_line_2">
+					<div class="bar_logo" style="background:url(./img/common_min.png) 0 -31px no-repeat;" ><a href="#">&nbsp;</a></div>
+					<div class="bar_logo" style="background:url(./img/common_min.png) 0 -53px no-repeat;" ><a href="#">&nbsp;</a></div>
+					<div class="bar_logo" style="background:url(./img/common_min.png) 0 -75px no-repeat;" ><a href="#">&nbsp;</a></div>
+					<a  href="#" style="margin-right: 19px;">登陆</a>
+					<a  href="#" style="margin-right: 19px;">注册</a>
+					<a  href="#" style="margin-right: 19px;background:url(./img/common_min.png) -4px -115px no-repeat;padding-left: 17px;">消息</a>
+					<a  href="#" style="margin-right: 19px;background:url(./img/dingdan.jpg)  no-repeat;padding-left: 17px;">我的订单</a>
+					<a  href="#" style="margin-right: 19px;">我的收藏</a>
+					<a  href="#" style="margin-right: 19px;">帮砖兑换</a>
+					<a  href="#" style="margin-right: 19px;background:url(./img/phone.png)  no-repeat;padding-left: 17px;">手机版</a>
+					<a  href="#" style="margin-right: 19px;">帮5淘</a>
+					<a  href="#" style="margin-right: 19px;">客户服务</a>
+					<a  href="#" style="margin-right: 19px;background:url(./img/gouwuche.jpg)  no-repeat;padding-left: 17px;">购物车<span style="color: rgb(254,108,0);"><strong>0</strong></span></a>
+				</div>
+			</div>
+			<div class="box_second">
+				<div class="box_second_img"><img src="./img/logo_03.jpg"></div>
+				<input type="text" name="KeyWord" class="box_second_search" value="输入商品网址或关键词，直通全网，快速帮5购">
+				<input type="button" name="Search" class="box_second_search_button" value="搜全网">
+				<div class="box_second_box">
+					<div class="box_second_box_img" style="background:url(./img/common_min.png) -4px -115px no-repeat;padding-left: 17px;"></div>
+					<br>
+					400-085-0505
+				</div>
+				<div class="box_second_box">
+					<div class="box_second_box_img" style="background:url(./img/common_min.png) -4px -115px no-repeat;padding-left: 17px;"></div>
+					<br>
+					mc@b6m.com
+				</div>
+				<div class="box_second_box_last" style="background-color: rgb(254,108,0)">常见问题</div>
+			</div>
+			<div class="box_click_line">
+				<div class="box_click_first" style="color: red">洗发护发</div>
+				<div class="box_click" style="color: red">日本纸尿裤</div>
+				<div class="box_click">身体乳</div>
+				<div class="box_click">文胸内衣</div>
+				<div class="box_click" style="color:rgb(154,151,145)">iPhone 6s</div>
+				<div class="box_click" style="color:rgb(154,151,145)">iPad Air2</div>
+				<div class="box_click">牛仔裤</div>
+				<div class="box_click">奶粉</div>
+				<div class="box_click">防晒霜</div>
+				<div class="box_click_last">伞</div>
+			</div>
+			<div class="box_but_line">
+				<div class="box_but_line_first">全部商品分类</div>
+				<div class="box_but_line_but">帮5赚</div>
+				<div class="box_but_line_but">帮韩品</div>		
+				<div class="box_but_line_but">超划算</div>		
+				<div class="box_but_line_but">品牌货栈</div>
+				<div class="box_but_line_but">韩国馆</div>
+				<div class="box_but_line_but">帮社区</div>	
+				<div class="box_but_line_but">1元兑奖<img src="./img/hot.gif"></div>									
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="body_box1">
+			<div class="body_box1_1"><span style="float:left;margin-top:20px;">当前搜索电商</span><span style="margin-top:20px;float: left;">全网</span></div>
+			<div class="body_box1_2">
+					<span>手机</span><span>数码</span><span>影音</span><span>配件</span>
+					<span>电脑</span><span>网络</span><span>办公</span><span>打印</span>
+					<span>家电</span><span>厨卫</span><span>生活</span><span>个户</span>
+					<span>园艺</span><span>家具</span><span>家纺</span><span>家饰</span>
+					<span>彩妆</span><span>面部</span><span>身体</span><span>香水</span>
+					<span>男装</span><span>女装</span><span>内衣</span><span>其他</span>
+					<span>女包</span><span>男包</span><span>女鞋</span><span>男鞋</span>
+					<span>运动</span><span>户外</span><span>装备</span><span>服饰</span>
+					<span>儿童</span><span>婴儿</span><span>食品</span><span>玩具</span>
+					<span>乐器</span><span>家宠</span><span>收藏</span><span>鲜花</span>
+					<span>保健</span><span>理疗</span><span>药品</span><span>眼镜</span>
+					<span>果蔬</span><span>礼品</span><span>粮油</span><span>特产</span>
+					<span>文艺</span><span>生活</span><span>科技</span><span>教育</span>
+			</div>
+			<div class="body_box1_3"><img src="./img/dd_03.jpg">什么是帮5购</div>
+			<div class="body_box1_3"><img src="./img/dd_06.jpg">帮5购提供什么服务</div>
+			<div class="body_box1_3"><img src="./img/dd_08.jpg">如何开通帮5购服务</div>
+		</div>
+		<div class="body_box2">
+
+			<div class="body_box2_img" id="box">
+				<div class="slider" id="slider">
+					<div class="slide"><img src="img/bann6.png"></div>
+					<div class="slide"><img src="img/bann1.jpeg"></div>
+					<div class="slide"><img src="./img/bann2.jpeg"></div>
+					<div class="slide"><img src="./img/bann3.jpeg"></div>
+					<div class="slide"><img src="./img/bann4.jpeg"></div>
+					<div class="slide"><img src="./img/bann5.jpeg"></div>
+					<div class="slide"><img src="./img/bann6.png"></div>
+					<div class="slide"><img src="./img/bann1.jpeg"></div>
+				</div>
+				<span id="sleft"></span>
+				<span id="sright"></span>
+				<ul class="nav" id="nav">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+
+			</div>
+			<script>
+				
+				window.onload=function(){
+					var top=document.getElementById('box_out');
+					window.onscroll=function(){
+						var a=document.documentElement.scrollTop||document.body.scrollTop;
+						if(a>=160){
+							top.style.position='fixed';
+							top.style.top=0+"px";
+							top.style.width=1350+"px";
+
+						}else{
+							top.style.position='static';
+						}
+					}
+				}
+				//轮播可视化窗口	
+
+				var box = document.getElementById('box');
+				//获取li
+				var oNavlist = document.getElementById('nav').children;
+				var slider = document.getElementById('slider');
+				//获取左右按钮
+				var sleft = document.getElementById('sleft');
+				var sright = document.getElementById('sright');
+				var index = 1;
+				var timer;
+				var isMoving = false;
+				box.onmouseover = function(){
+					animate(sleft,{opacity:90})
+					animate(sright,{opacity:90})
+					clearInterval(timer)
+				}
+				box.onmouseout = function(){
+					clearInterval(timer);
+					animate(sleft,{opacity:0})
+					animate(sright,{opacity:0})
+					timer = setInterval(next, 2000);
+				}
+				timer = setInterval(next, 2000);
+				sright.onclick = next;
+				sleft.onclick = prev;
+
+				
+				for( var i=0; i<oNavlist.length; i++ ){
+					oNavlist[i].index = i;
+					oNavlist[i].onclick = function(){
+						index = this.index+1;
+						navmove();
+						animate(slider,{left:-800*index});
+					}
+				}
+
+				function next(){
+					if(isMoving){
+						return;
+					}
+					isMoving = true;
+					index++;
+					navmove();
+					animate(slider,{left:-800*index},function(){
+						if(index==6){
+							slider.style.left = '-800px';
+							index = 1;
+						}
+						isMoving = false;
+					});
+				}
+
+
+				function prev(){
+					if(isMoving){
+						return;
+					}
+					isMoving = true;
+					index--;
+					navmove();
+					animate(slider,{left:-1200*index},function(){
+						if(index==0){
+							slider.style.left = '-4800px';
+							index = 6;
+						}
+						isMoving = false;
+					});
+				}
+
+				function navmove(){
+					for( var i=0; i<oNavlist.length; i++ ){
+						oNavlist[i].className = "";
+					}
+					if(index >6 ){
+						oNavlist[0].className = "active";
+					}else if(index<=0){
+						oNavlist[5].className = "active";
+					}else {
+						oNavlist[index-1].className = "active";
+					}
+				}
+
+				
+
+				function getStyle(obj, attr){
+					if(obj.currentStyle){
+						return obj.currentStyle[attr];
+					} else {
+						return getComputedStyle(obj, null)[attr];
+					}
+				}
+				function animate(obj,json,callback){
+					clearInterval(obj.timer);
+					obj.timer = setInterval(function(){
+						var isStop = true;
+						for(var attr in json){
+							var now = 0;
+							if(attr == 'opacity'){
+								now = parseInt(getStyle(obj,attr)*100);
+							}else{
+								now = parseInt(getStyle(obj,attr));
+							}
+							var speed = (json[attr] - now) / 8;
+							speed = speed>0?Math.ceil(speed):Math.floor(speed);
+							var cur = now + speed;
+
+							if(attr == 'opacity'){
+								obj.style[attr] = cur / 100;
+							}else{
+								obj.style[attr] = cur + 'px';
+							}
+							if(json[attr] !== cur){
+								isStop = false;
+							}
+						}
+						if(isStop){
+							clearInterval(obj.timer);
+							callback&&callback();
+						}
+					}, 30)
+				}
+			
+
+			</script>
+
+			<div class="body_box2_box"><a href="#"><img src="img/1(1).jpg" alt=""></a></div>
+			<div class="body_box2_box"><a href="#"><img src="img/2.jpg" alt=""></a></div>
+			<div class="body_box2_box" ><a href="#"><img src="img/3(1).png" alt=""></div>
+			<div class="body_box2_box"><a href="message.html"><img src="img/qqq.png" alt=""></a></div>
+		</div>
+		<div class="body_box_right">
+			
+			<div id="animate-up">
+				<div id="news">
+					<img src="img/ico-notice.png" alt="" style="margin-left:20px;margin-top:13px;margin-right: 6px;">
+					<span>帮帮快讯</span><span style="margin-left:50px;">>></span>
+				</div>
+				<div id="news-move">
+					<ul id="news-ul" class="news-ul">
+						<li>[公告]&nbsp&nbsp帮购及服务调整1</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整2</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整3</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整4</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整5</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整6</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整7</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整8</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整9</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整10</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整11</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整12</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整13</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整1</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整2</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整3</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整4</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整5</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整6</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整7</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整8</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整9</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整10</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整11</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整12</li>
+						<li>[公告]&nbsp&nbsp帮购及服务调整13</li>
+					</ul>
+					<script type="text/javascript">
+						var num=0;
+						var news=document.getElementById('news-ul');
+						var news1=document.getElementById('news-move');
+						news.style.marginTop=0+"px";
+						var timer1=setInterval(function(){
+							up(news);
+						}, 10);
+						news1.onmouseout=function(){
+							clearInterval(timer);
+							timer1=setInterval(function(){
+							up(news);
+						}, 10);
+						}
+						news1.onmouseover=function(){
+							clearInterval(timer1);
+						}
+						function up(obj){
+							if(num==380){
+								obj.style.marginTop=-16+"px";
+								num=16;
+							}
+							num++;
+							obj.style.marginTop=-num+"px";
+						}
+
+					</script>
+				</div>
+			</div>
+
+			
+			<div id="phonefee">
+				<div id="phonefee-top">
+					<img src="img/phone.png" alt="" style="margin-right:12px;margin-top: 6px;float: left;"><span style="margin-top:-2px;float: left;">话费充值</span><span style="color:rgb(254,108,0);margin-top:-2px;float: left;">(可使用超级帮钻)</span>
+				</div>
+				<input type="text" id="phonefee-input" value="请输入手机号">
+				<select name="" id="phonefee-select" value="10">
+				</select>
+				<span id="phonefee-num">¥10</span>
+				<div id="phonefee-pay">充值</div>
+				<script type="text/javascript">
+				var phone=document.getElementById('phonefee-select');
+				var phonefeeNum=document.getElementById('phonefee-num');
+				for(i=1;i<=10;i++){
+		       		var option=document.createElement('option');
+		       		var str=i;
+		       		option.value=str*10;
+		       		option.innerHTML=str*10;
+		       		phone.appendChild(option);
+		       	}
+		       	phone.onchange=function(){
+		       		phonefeeNum.innerHTML="¥"+phone.value;
+		       		console.log(phonefeeNum);
+		       	}
+				</script>
+			</div>
+			
+		</div>
+
+		<ul id="right">
+			<li id="right-first">
+				<div id="right-first-top"></div>
+				<div id="right-first-bottom"></div>
+			</li>
+			<li id="right-second">
+				<div id="right-second-left"></div>
+				<div id="setup">
+					<div style="font-size:13px;margin-top:50px;margin-left:5px;">未登录</div>
+					<div style="font-size:12px;width:40px;height:25px;text-align: center;line-height: 25px;margin-top:15px;margin-left:5px;color:white;border:1px solid rgb(255,255,255);">登录</div>
+				</div>
+			</li>
+			<li id="right-third">
+				<div id="right-third-top"></div>
+				<div id="right-third-bottom"></div>
+				<div id="right-third-middle"></div>
+			</li>
+			<li id="right-fourth"></li>
+		</ul>
+		<script type="text/javascript">
+			var flag=0;
+			var first=document.getElementById('right-first');
+			first.onmouseover=function(){
+				if(flag==0){
+					flag=1;
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(first,'left'));
+						if(left==0){
+							flag=2;
+							first.style.left=0+"px";
+							clearInterval(timer);
+						}else{
+							left--;
+							first.style.left=left+"px";
+						}
+				}, 0.001)
+				}	
+			}
+			first.onmouseout=function(){
+				first.style.left=0+"px";
+				var left=parseInt(getStyle(first,'left'));
+				if(flag==2&&left==0)
+				{
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(first,'left'));
+						if(left==77){
+							first.style.left=77+"px";
+							clearInterval(timer);
+							flag=0;
+						}else{
+							left++;
+							first.style.left=left+"px";
+						}
+					}, 0.001)
+				}
+			}
+			var second=document.getElementById('right-second');
+			second.onmouseover=function(){
+				if(flag==0){
+					flag=1;
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(second,'left'));
+						if(left==0){
+							flag=2;
+							second.style.left=0+"px";
+							clearInterval(timer);
+						}else{
+							left--;
+							second.style.left=left+"px";
+						}
+				}, 0.001)
+				}	
+			}
+			second.onmouseout=function(){
+				second.style.left=0+"px";
+				var left=parseInt(getStyle(second,'left'));
+				if(flag==2&&left==0)
+				{
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(second,'left'));
+						console.log(left);
+						if(left==77){
+							second.style.left=77+"px";
+							clearInterval(timer);
+							flag=0;
+						}else{
+							left++;
+							second.style.left=left+"px";
+						}
+					}, 0.001)
+				}
+			}
+			var third=document.getElementById('right-third');
+			var bottom=document.getElementById('right-third-bottom');
+			var middle=document.getElementById('right-third-middle');
+			middle.style.background='rgb(255,156,97)';
+			third.onmouseover=function(){
+				if(flag==0){
+					flag=1;
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(third,'left'));
+						if(left==0){
+							flag=2;
+							third.style.left=0+"px";						
+							bottom.style.backgroundPosition=500+"px "+0+"px";
+							middle.style.background='url(img/erwei.png)';
+							clearInterval(timer);
+						}else{
+							left--;
+							third.style.left=left+"px";
+						}
+				}, 0.001)
+				}	
+			}
+			third.onmouseout=function(){
+				third.style.left=0+"px";
+				var left=parseInt(getStyle(third,'left'));
+				if(flag==2&&left==0)
+				{
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(third,'left'));
+						console.log(left);
+						if(left==77){
+							third.style.left=77+"px";
+							bottom.style.backgroundPosition=10+"px "+43+"px";
+							middle.style.background='rgb(255,156,97)';
+							clearInterval(timer);
+							flag=0;
+						}else{
+							left++;
+							third.style.left=left+"px";
+						}
+					}, 0.001)
+				}
+			}
+			var fourth=document.getElementById('right-fourth');
+			fourth.onmouseover=function(){
+				if(flag==0){
+					flag=1;
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(fourth,'left'));
+						if(left==0){
+							flag=2;
+							fourth.style.left=0+"px";
+							clearInterval(timer);
+						}else{
+							left--;
+							fourth.style.left=left+"px";
+						}
+				}, 0.001)
+				}	
+			}
+			fourth.onmouseout=function(){
+				fourth.style.left=0+"px";
+				var left=parseInt(getStyle(fourth,'left'));
+				if(flag==2&&left==0)
+				{
+					var timer=setInterval(function(){
+						var left=parseInt(getStyle(fourth,'left'));
+						console.log(left);
+						if(left==77){
+							fourth.style.left=77+"px";
+							clearInterval(timer);
+							flag=0;
+						}else{
+							left++;
+							fourth.style.left=left+"px";
+						}
+					}, 0.001)
+				}
+			}
+		</script>
+
+
+		<div class="body_button">
+			<div style="margin-top:2px;float: left;">
+					<img src="img/loginB.jpg" alt="">
+			</div>
+			<div class="bottom-list">
+				<ul class="bottom-list-ul" style="margin-left:80px;margin-top:0px;">
+					<li style="color:black;font-size:18px;">购物指南</li>
+					<li><a href="">如何下单</a></li>
+					<li><a href="">帮5购指南</a></li>
+					<li><a href="">订单查询</a></li>
+					<li><a href="">查看物流</a></li>
+				</ul>
+				<ul class="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+					<li style="color:black;font-size:18px;">支付相关</li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">安全设置</a></li>
+					<li><a href="">账户信息</a></li>
+				</ul>
+				<ul class="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+					<li style="color:black;font-size:18px;">售后服务</li>
+					<li><a href="">取消订单</a></li>
+					<li><a href="">申请售后</a></li>
+					<li><a href="">退货流程</a></li>
+					<li><a href="">退款相关</a></li>
+				</ul>
+				<ul class="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+					<li style="color:black;font-size:18px;">VIP服务</li>
+					<li><a href="">VIP优惠</a></li>
+					<li><a href="">如何成为VIP</a></li>
+					<li><a href="">超级帮钻</a></li>
+				</ul>
+				<ul class="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+					<li style="color:black;font-size:18px;">帮韩品</li>
+					<li><a href="">韩国正品</a></li>
+					<li><a href="">闪电发货</a></li>
+					<li><a href="">帮韩品售后</a></li>
+				</ul>
+				<ul class="bottom-list-ul" style="margin-left:62px;margin-top:0px;">
+					<li style="color:black;font-size:18px;">更多</li>
+					<li><a href="">手机APP</a></li>
+					<li><a href="">帮5采APP</a></li>
+					<li><a href="">帮5陶插件</a></li>
+					<li><a href="">其他</a></li>
+				</ul>
+				<div style="margin-left:65px;float: left;">
+					<img src="img/erweima.jpg" alt="">
+				</div>
+			</div>
+			<ul class="about">
+				<li><a href="">关于帮5买</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">合作商家</a></li>
+				<li><a href="">友情链接</a></li>
+				<li><a href="">加入我们</a></li>
+				<li><a href="">移动应用</a></li>
+				<li><a href="">热门</a></li>
+				<li><a href="">广告联盟</a></li>
+				<li style="border-right: 0px;"><a href="">使用条款</a></li>
+			</ul>
+			<div class="copy"><p>Copyright &nbsp© &nbsp2011-2015 &nbspB5M.COM.All &nbsp rights &nbsp reserved.Powered &nbsp by &nbsp B5Msoft &nbsp Co.Ltd</p></div>
+			<div class="license">增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证(沪)-非经营性-2013-0034沪卫(中医)【2015】号沪ICP备11034776号-3|食品流通许可证：SP3101151410301755</div>
+			<div class="license-picture">
+				<img src="img/bo1.gif" alt="" style="float: left;">
+				<img src="img/bo2.png" alt="" style="float: left;">
+				<img src="img/bo3.gif" alt="" style="float: left;">
+				<img src="img/bo4.png" alt="" style="float: left;">
+				<img src="img/bo5.png" alt="" style="float: left;">
+				<img src="img/bo6.png" alt="" style="float: left;">
+				<img src="img/bo7.png" alt="" style="float: left;">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
